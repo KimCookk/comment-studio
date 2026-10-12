@@ -1,6 +1,4 @@
 import {
-  avatarColor,
-  avatarInitial,
   CommentData,
   formatCount,
   Theme,
@@ -62,22 +60,8 @@ export default function InstagramComment({ data, theme }: Props) {
             }}
           />
         ) : (
-          <div
-            style={{
-              width: 32,
-              height: 32,
-              borderRadius: "50%",
-              background: avatarColor(nickname),
-              color: "#fff",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 14,
-              fontWeight: 600,
-            }}
-          >
-            {avatarInitial(nickname)}
-          </div>
+          // 인스타 기본 프로필 (회색 배경 + 흰 사람 실루엣)
+          <DefaultInstaAvatar />
         )}
       </div>
 
@@ -132,5 +116,30 @@ export default function InstagramComment({ data, theme }: Props) {
         </svg>
       </div>
     </div>
+  );
+}
+
+/**
+ * 인스타그램 기본 프로필 (회색 배경 원 + 흰 사람 실루엣).
+ * 첨부된 인스타 기본 프로필 이미지를 외부 파일 없이 SVG로 재현.
+ */
+function DefaultInstaAvatar() {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 64 64"
+      style={{ display: "block", borderRadius: "50%" }}
+    >
+      {/* 배경 원 */}
+      <circle cx="32" cy="32" r="32" fill="#d9dbde" />
+      {/* 머리 */}
+      <circle cx="32" cy="25" r="11" fill="#ffffff" />
+      {/* 어깨/몸통 (하단 반원) */}
+      <path
+        d="M14 56c0-10.5 8-18 18-18s18 7.5 18 18z"
+        fill="#ffffff"
+      />
+    </svg>
   );
 }

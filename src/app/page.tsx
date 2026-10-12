@@ -146,8 +146,8 @@ export default function Home() {
       <header className="mb-6 text-center">
         <h1 className="text-2xl font-bold sm:text-3xl">댓글 이미지 생성기</h1>
         <p className="mt-2 text-sm text-neutral-500">
-          유튜브·인스타·디시·에펨코리아 댓글을 실제처럼 만들어 PNG로
-          저장하세요. 콘텐츠 제작·패러디용으로만 사용해 주세요.
+          유튜브·인스타·커뮤니티 댓글을 실제처럼 만들어 PNG로 저장하세요.
+          콘텐츠 제작·패러디용으로만 사용해 주세요.
         </p>
       </header>
 

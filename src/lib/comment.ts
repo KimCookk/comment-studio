@@ -75,7 +75,7 @@ export const PLATFORMS: Record<Platform, PlatformMeta> = {
   },
   dcinside: {
     id: "dcinside",
-    label: "디시인사이드",
+    label: "디모커뮤니티",
     supportsTheme: false,
     // 디시 댓글은 추천/비추천이 없음
     countLabel: null,
