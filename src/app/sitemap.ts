@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://comment-studio.vercel.app";
+  const base = "https://comment-studio-gilt.vercel.app";
   return [
     {
       url: base,
