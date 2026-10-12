@@ -427,6 +427,119 @@ export default function Home() {
         </section>
       </div>
 
+      {/* ───────── 소개 / 사용법 / FAQ (콘텐츠) ───────── */}
+      <article className="mt-16 space-y-12 text-neutral-700">
+        {/* 서비스 소개 */}
+        <section>
+          <h2 className="text-xl font-bold text-neutral-900">
+            댓글 이미지 생성기란?
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed">
+            댓글 이미지 생성기는 유튜브, 인스타그램, 커뮤니티 등 다양한
+            플랫폼의 댓글 모양을 그대로 재현한 이미지를 만들어 주는 무료
+            도구입니다. 닉네임과 댓글 내용, 좋아요 수 등을 입력하면 실제
+            화면에서 캡처한 것처럼 자연스러운 댓글 이미지를 바로 만들 수
+            있습니다. 완성된 이미지는 고해상도 PNG 파일로 저장되어 영상 편집,
+            썸네일 제작, 발표 자료, 블로그 등 다양한 창작 작업에 활용할 수
+            있습니다.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed">
+            회원가입이나 프로그램 설치 없이 웹 브라우저에서 바로 사용할 수
+            있으며, 입력한 내용은 서버에 저장되지 않고 이용자의 브라우저에서만
+            처리됩니다.
+          </p>
+        </section>
+
+        {/* 사용법 */}
+        <section>
+          <h2 className="text-xl font-bold text-neutral-900">사용 방법</h2>
+          <ol className="mt-4 space-y-3 text-sm leading-relaxed">
+            <li>
+              <strong className="text-neutral-900">1. 플랫폼 선택</strong>
+              <br />
+              상단에서 만들고 싶은 댓글의 플랫폼(유튜브, 인스타그램,
+              커뮤니티)을 선택합니다. 플랫폼마다 실제 디자인에 맞는 입력
+              항목이 나타납니다.
+            </li>
+            <li>
+              <strong className="text-neutral-900">2. 내용 입력</strong>
+              <br />
+              닉네임, 댓글 내용, 좋아요 수 등을 입력합니다. 닉네임과 좋아요
+              수는 &apos;자동 생성&apos; 버튼으로 자연스러운 값을 바로 채울 수
+              있습니다. 유튜브·인스타그램은 프로필 이미지도 직접 업로드할 수
+              있습니다.
+            </li>
+            <li>
+              <strong className="text-neutral-900">3. 테마와 배경 조절</strong>
+              <br />
+              다크 모드와 라이트 모드를 선택하고, 배경 불투명도를 조절합니다.
+              불투명도를 0%로 설정하면 배경이 투명하게 저장되어 영상이나 다른
+              이미지 위에 자연스럽게 올릴 수 있습니다.
+            </li>
+            <li>
+              <strong className="text-neutral-900">4. PNG 다운로드</strong>
+              <br />
+              미리보기에서 결과를 확인한 뒤 &apos;PNG 다운로드&apos; 버튼을
+              누르면 고해상도 이미지가 저장됩니다.
+            </li>
+          </ol>
+        </section>
+
+        {/* FAQ */}
+        <section>
+          <h2 className="text-xl font-bold text-neutral-900">자주 묻는 질문</h2>
+          <div className="mt-4 space-y-5 text-sm leading-relaxed">
+            <div>
+              <h3 className="font-semibold text-neutral-900">
+                완전히 무료인가요?
+              </h3>
+              <p className="mt-1">
+                네, 모든 기능을 무료로 사용할 수 있습니다. 회원가입이나 결제
+                없이 바로 이용 가능합니다.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-neutral-900">
+                만든 이미지는 어디에 쓸 수 있나요?
+              </h3>
+              <p className="mt-1">
+                영상 편집 소재, 유튜브 썸네일, 밈·짤 제작, 발표 자료, 디자인
+                시안 등 창작 목적으로 자유롭게 활용할 수 있습니다. 다만 실존
+                인물 사칭이나 허위사실 유포 등 타인에게 피해를 주는 용도로는
+                사용할 수 없습니다.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-neutral-900">
+                입력한 내용이 저장되나요?
+              </h3>
+              <p className="mt-1">
+                아니요. 입력한 닉네임, 댓글 내용, 업로드한 이미지는 서버로
+                전송되거나 저장되지 않으며 이용자의 브라우저 안에서만
+                처리됩니다.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-neutral-900">
+                배경을 투명하게 저장할 수 있나요?
+              </h3>
+              <p className="mt-1">
+                네. 배경 불투명도를 0%로 설정하면 배경이 투명한 PNG로
+                저장되어, 영상이나 다른 이미지 위에 겹쳐 사용하기 좋습니다.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-neutral-900">
+                모바일에서도 쓸 수 있나요?
+              </h3>
+              <p className="mt-1">
+                네. PC와 모바일 웹 브라우저 모두에서 사용할 수 있습니다.
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+
       <footer className="mt-12 border-t border-neutral-200 pt-6 text-center text-xs text-neutral-400">
         <p>
           본 도구로 만든 이미지는 창작·패러디 목적으로만 사용하세요. 실존 인물
