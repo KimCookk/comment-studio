@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
+
+// Google AdSense 게시자 ID
+const ADSENSE_CLIENT = "ca-pub-4461191674331770";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://comment-studio-gilt.vercel.app"),
@@ -42,6 +46,14 @@ export default function RootLayout({
           as="style"
           crossOrigin="anonymous"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+        />
+        {/* Google AdSense */}
+        <Script
+          id="adsbygoogle-init"
+          async
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
         />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
